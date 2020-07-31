@@ -1,0 +1,8 @@
+output "endpoint" {
+  value = "${aws_eks_cluster.sandbox-ar-cluster.endpoint}"
+}
+
+output "kubeconfig-certificate-authority-data" {
+  value = "${aws_eks_cluster.sandbox-ar-cluster.certificate_authority.0.data}"
+
+}
